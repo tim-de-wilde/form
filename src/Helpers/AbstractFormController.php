@@ -29,8 +29,7 @@ abstract class AbstractFormController extends AbstractController
         $this->additionalVars['form'] = $this->form;
 
         $this->renderTwig(
-            $response,
-            $this->additionalVars
+            $response
         );
     }
 

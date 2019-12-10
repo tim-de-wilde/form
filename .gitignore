@@ -1,1 +1,4 @@
 /vendor/
+/propel/generated-classes
+/propel/generated-conf
+/propel/generated-sql

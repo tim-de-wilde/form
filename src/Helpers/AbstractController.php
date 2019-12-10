@@ -31,18 +31,17 @@ abstract class AbstractController
 
     public function render(): void
     {
-        $this->renderTwig($this->show(), $this->additionalVars);
+        $this->renderTwig($this->show());
     }
 
     /**
      * @param PageResponse $response
-     * @param array        $additionalVars
      *
      * @throws \Twig\Error\LoaderError
      * @throws \Twig\Error\RuntimeError
      * @throws \Twig\Error\SyntaxError
      */
-    protected function renderTwig(PageResponse $response, array $additionalVars): void
+    protected function renderTwig(PageResponse $response): void
     {
         /**@var Environment $twig * */
         $twig = LocalConfig::getTwigEnvironment();

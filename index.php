@@ -44,6 +44,5 @@ try {
 
     $autoRoute->route();
 } catch (Throwable $e) {
-    var_dump($e);
     (new ErrorFound)->render();
 }

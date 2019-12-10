@@ -4,9 +4,4 @@
         <route>/</route>
         <controller>form\src\Modules\Form\Controllers\FormController</controller>
     </route>
-    <route>
-        <method>GET|POST</method>
-        <route>/Test</route>
-        <controller>form\src\Modules\Form\Controllers\Test</controller>
-    </route>
 </routes>
