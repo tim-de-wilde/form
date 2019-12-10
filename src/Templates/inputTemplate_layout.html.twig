@@ -1,0 +1,18 @@
+<div class="uk-margin">
+
+    <label>
+        {% block label %}
+        {% endblock %}
+    </label>
+
+    {% if item.inputError is not empty %}
+        <div class="uk-alert-danger" uk-alert>
+            <a class="uk-alert-close" uk-close></a>
+            <p>{{ item.inputError }}</p>
+        </div>
+    {% endif %}
+
+    {% block widget %}
+    {% endblock %}
+</div>
+

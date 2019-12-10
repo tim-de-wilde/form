@@ -1,0 +1,7 @@
+# Turn rewriting on
+Options +FollowSymLinks
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+# Redirect requests to index.php
+RewriteCond %{REQUEST_URI} !=/form/
+RewriteRule . /form/ [L]

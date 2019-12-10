@@ -1,0 +1,10 @@
+{% extends 'inputTemplate_layout.html.twig' %}
+
+{% block  label %}
+    {{ item.name }}
+{% endblock %}
+
+{% block widget %}
+    <input type="text" class="uk-input" placeholder="Postcode" name="{{ item.name ~ '[postcode]'}}" value="{{ item.data.postcode }}">
+    <input type="text" class="uk-input" placeholder="Huisnummer" name="{{ item.name ~ '[housenr]' }}" value="{{ item.data.housenr }}">
+{% endblock %}

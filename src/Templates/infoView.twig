@@ -1,0 +1,15 @@
+{% extends 'base.twig' %}
+
+{% block body %}
+    <body class="uk-dark">
+    <article class="uk-article uk-margin-medium-left uk-margin-medium-top">
+        <span class="uk-text-danger" uk-icon="icon: warning; ratio: 3"></span>
+        <h1 class="uk-text-bold uk-text-danger">
+            {% block lead %} {% endblock %}
+        </h1>
+        <p class="uk-text-large uk-text">
+            {% block main %} {% endblock %}
+        </p>
+    </article>
+    </body>
+{% endblock %}

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<database name="form" defaultIdMethod="native">
+    <table name="formResults" phpName="formResults" namespace="formResults">
+        <column name="id" type="integer" required="true" primaryKey="true" autoIncrement="true"/>
+        <column name="firstname" type="varchar"/>
+        <column name="infix" type="varchar"/>
+        <column name="lastname" type="varchar"/>
+        <column name="email" type="varchar"/>
+        <column name="phonenumber" type="varchar"/>
+        <column name="password" type="varchar"/>
+        <column name="postcode" type="varchar"/>
+        <column name="city" type="varchar"/>
+        <column name="province" type="varchar"/>
+    </table>
+</database>

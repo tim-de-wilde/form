@@ -1,0 +1,10 @@
+{% extends 'inputTemplate_layout.html.twig' %}
+
+{% block label %}
+    {{ item.name }}
+{% endblock %}
+
+{% block widget %}
+    <input type="text" class="uk-input" name="{{ item.name ~ '[voorletter]' }}" placeholder="Voorletter(s)" value="{{ item.data.voorletter }}">
+    <input type="text" class="uk-input" name="{{ item.name ~ '[voornaam]' }}" placeholder="Voornaam" value="{{ item.data.voornaam }}">
+{% endblock %}

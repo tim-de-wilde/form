@@ -1,0 +1,15 @@
+{% extends 'inputTemplate_layout.html.twig' %}
+
+{% block label %}
+    <strong>{{ item.name }}</strong>
+{% endblock %}
+
+{% block widget %}
+    <input type="text" class="uk-input" name="{{ item.name }}" value="{{ item.data }}">
+{% endblock %}
+
+{% block error %}
+    {% if  item.inputError is not empty %}
+    {{ item.inputError }}
+    {% endif %}
+{% endblock %}

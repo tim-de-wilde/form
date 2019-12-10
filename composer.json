@@ -1,0 +1,19 @@
+{
+    "name": "timde/form",
+    "type": "project",
+    "authors": [
+        {
+            "name": "tim-de-wilde",
+            "email": "40461212+tim-de-wilde@users.noreply.github.com"
+        }
+    ],
+    "require": {
+		"propel/propel": "~2.0@dev",
+        "altorouter/altorouter": "1.1.0",
+        "twig/twig": "^2.0",
+        "symfony/form": "^5.0"
+	},
+    "autoload": {
+        "classmap": ["src/", "propel/generated-classes/", "config/"]
+    }
+}
