@@ -47,7 +47,7 @@ abstract class AbstractFormController extends AbstractController
 
             foreach ($items as $item) {
                 if (array_key_exists($item->getName(), $data)) {
-                    $item->setData($data[$item->getName()]);
+                    $item->setData(strip_tags($data[$item->getName()]));
                 }
             }
 
