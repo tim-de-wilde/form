@@ -45,9 +45,16 @@ class FormValidator
         $validators = $item->getValidators();
         $value = $item->getData();
 
+
         foreach ($validators as $type) {
             //Validation for multiple values
             if (\is_array($value)) {
+                foreach ($value as $v) {
+                    if ($v !== strip_tags($v)) {
+                        return 'Ongeldige waarde';
+                    }
+                }
+
                 switch ($type) {
                     case self::TYPE_EMPTY:
                         $empty = false;
@@ -85,6 +92,10 @@ class FormValidator
 
             //Validation for single values
             elseif (\is_string($value)) {
+                if ($value !== strip_tags($value)) {
+                    return 'Ongeldige waarde';
+                }
+
                 switch ($type) {
                     case self::TYPE_EMPTY:
                         if (empty($value)) {
@@ -113,7 +124,6 @@ class FormValidator
         }
         return true;
     }
-
 
     /**
      * @param string $number
