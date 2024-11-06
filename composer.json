@@ -10,7 +10,7 @@
     "require": {
 		"propel/propel": "~2.0@dev",
         "altorouter/altorouter": "1.1.0",
-        "twig/twig": "^2.0",
+        "twig/twig": "^3.11",
         "symfony/form": "^5.0"
 	},
     "autoload": {
